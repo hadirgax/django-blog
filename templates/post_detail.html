@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content%}
+    <div class="post-entry">
+        <h2>{{ object.title }}</h2>
+        <h3>{{ object.author }}</h3>
+        <p>{{ object.body }}</p>
+    </div>
+{% endblock content %}

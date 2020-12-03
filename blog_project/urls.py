@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('blog.urls')),  # new
+    path('admin/', admin.site.urls),  # default
+    path('', include('blog.urls')),  # home
+    path('accounts/', include('django.contrib.auth.urls')),  # login/logout 1st
+    path('accounts/', include('accounts.urls')),  # singup 2nd
 ]

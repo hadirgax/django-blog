@@ -25,7 +25,7 @@ SECRET_KEY = 'odbg$u*h3hm-54+d%)*y$$19#&7litwv-@4(@imgf-usha1=1#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
